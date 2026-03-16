@@ -1,0 +1,104 @@
+.wrap {}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.title {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.badge {
+  font-size: 11px;
+  font-family: var(--font-mono);
+  padding: 2px 8px;
+  border-radius: 99px;
+  background: #E1F5EE;
+  color: #0F6E56;
+}
+
+@media (prefers-color-scheme: dark) {
+  .badge {
+    background: #0a3328;
+    color: #5DCAA5;
+  }
+}
+
+.tabs {
+  display: flex;
+  gap: 4px;
+  background: var(--color-surface-2);
+  border-radius: var(--radius-md);
+  padding: 3px;
+}
+
+.tab {
+  font-size: 12px;
+  padding: 4px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: transparent;
+  color: var(--color-text-secondary);
+  font-weight: 400;
+  transition: all 0.15s;
+  font-family: var(--font-sans);
+}
+
+.tab.active {
+  background: var(--color-surface);
+  color: var(--color-text-primary);
+  font-weight: 500;
+  border: 0.5px solid var(--color-border);
+}
+
+.chartArea {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.sliderWrap {
+  margin-top: 12px;
+}
+
+.sliderLabels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--color-text-tertiary);
+  margin-top: 4px;
+}
+
+.legend {
+  display: flex;
+  gap: 16px;
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  margin-top: 8px;
+  min-height: 20px;
+}
+
+.legendDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+}

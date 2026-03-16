@@ -1,0 +1,80 @@
+.wrapper {
+  background: var(--color-surface);
+  border: 0.5px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.label {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.inputGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.prefix {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+.input {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  width: 110px;
+  padding: 6px 10px;
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-md);
+  background: var(--color-surface-2);
+  color: var(--color-text-primary);
+  outline: none;
+}
+
+.input:focus {
+  border-color: var(--color-teal);
+}
+
+.input.hasError {
+  border-color: var(--color-coral-dark);
+}
+
+.resetBtn {
+  font-size: 12px;
+  padding: 5px 12px;
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-md);
+  background: var(--color-surface-2);
+  color: var(--color-text-secondary);
+}
+
+.resetBtn:hover {
+  background: var(--color-border);
+}
+
+.comparison {
+  font-size: 13px;
+  color: var(--color-teal-dark);
+  font-weight: 500;
+  margin-left: auto;
+}
+
+.comparison.negative {
+  color: var(--color-coral-dark);
+}
+
+.error {
+  font-size: 12px;
+  color: var(--color-coral-dark);
+  width: 100%;
+}
